@@ -48,7 +48,7 @@ class CalculateAmount {
       .orFail(() => {
         throwError("Dropoff location not found", 404);
       });
-    if (pickup.route === 11) {
+    if (dropoff.route === 11) {
       throwError(
         "Your Dropoff Location is Extreme, no Price for this Route",
         404
